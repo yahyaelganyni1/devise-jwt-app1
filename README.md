@@ -207,8 +207,9 @@ end
 then we need to add the following to the 'registrations' controller.
 
 ```ruby
-class RegistrationsController < Devise::RegistrationsController
-  include RackSessionFix
+class Users::RegistrationsController < Devise::RegistrationsController
+
+include RackSessionFix
   ...
 end
 ```
