@@ -2,6 +2,10 @@
 
 <font size="4">Today we’ll walk through building a Rails backend using Devise-JWT which allows users to log in, access endpoints requiring authentication, and log out.</font>
 
+## what is jwt
+
+JWTs or JSON Web Tokens are most commonly used to identify an authenticated user. They are issued by an authentication server and are consumed by the client-server (to secure its APIs).
+
 ### Setup
 
 Create a rails app from the command line.
