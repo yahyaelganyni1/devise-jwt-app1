@@ -254,6 +254,8 @@ devise:
   jwt_secret_key: <rake secret key>
 ```
 
+![secret key](./redme-img/secret-key.png)
+
 Then save the file.
 
 `ctrl+x`, then `y`, then `enter` to close and save if you’re using the nano editor.
