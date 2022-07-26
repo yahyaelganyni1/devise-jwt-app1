@@ -256,9 +256,11 @@ devise:
 
 Then save the file.
 
-ctrl+x, then y, then enter to close and save if you’re using the nano editor.
+`ctrl+x`, then `y`, then `enter` to close and save if you’re using the nano editor.
 
 ## Routes
+
+<br/>
 
     Update your routes so they point to your new controllers, rather than to the default devise controllers.
 
@@ -276,3 +278,76 @@ end
 ```
 
 **Now let’s make some request to test it out.**
+
+## Testing
+
+we are going to test the routes we just created with insomnia but you can use postman or whatever you prefer.
+
+first we start the server.
+
+```console
+rails s
+```
+
+then we can make requests to the following endpoints to create a user.
+
+```console
+http://localhost:3000/users
+```
+
+Register a user.
+
+```javascript
+{
+	"user": {
+		"email": "test@test.com",
+		"password": "password"
+	}
+}
+```
+
+![signUp](./redme-img/signeUp.png)
+
+we can find the authorization token in the response in the header.
+
+![authHeader](./redme-img/authorization-header.png)
+
+now to log in.
+
+```console
+http://localhost:3000/users/sign_in
+```
+
+```javascript
+{
+	"user": {
+		"email": "yahya1@gmail.com",
+		"password": "123123"
+	}
+}
+```
+
+![signIn](./redme-img/sign_in.png)
+
+and to get the member data.
+
+```console
+http://localhost:3000/member-data
+```
+
+we need to copy the authorization token from the response we got from the sign up request or the sign in request.
+<br/>
+and add it to the header, that we are going to send to the server.
+![authHeader](./redme-img/copy-the-auth-header.png)
+<br/>
+then we send the GET request to the server.
+
+now we get the response with the user data.
+
+![memberData](./redme-img/member-data.png)
+
+i hope you enjoyed this tutorial and learned a lot about Devise and Rails.
+
+if you have any questions, please feel free to contact me.
+
+and don't forget to leave a star on the repo ^^.
