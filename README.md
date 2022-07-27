@@ -93,7 +93,7 @@ $ rails g migration CreateJwtDenylist
 Update it to this.
 
 ```ruby
-class CreateJwtDenylist < ActiveRecord::Migration[6.1]
+class CreateJwtDenylist < ActiveRecord::Migration[7.0]
   def change
     create_table :jwt_denylist do |t|
       t.string :jti, null: false
