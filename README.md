@@ -333,18 +333,21 @@ http://localhost:3000/users/sign_in
 	}
 }
 ```
+<br/>
 
 ![signIn](./redme-img/sign_in.png)
-
+<br/>
 and to get the member data.
+<br/>
 
 ```console
 http://localhost:3000/member-data
 ```
 
 we need to copy the authorization token from the response we got from the sign up request or the sign in request.
-<br/>
 and add it to the header, that we are going to send to the server.
+<br/>
+
 ![authHeader](./redme-img/copy-the-auth-header.png)
 <br/>
 then we send the GET request to the server.
