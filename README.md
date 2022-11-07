@@ -356,8 +356,17 @@ now we get the response with the user data.
 
 ![memberData](./redme-img/member-data.png)
 
-i hope you enjoyed this tutorial and learned a lot about Devise and Rails.
+---
 
-if you have any questions, please feel free to contact me.
+Thanks for reading.
 
-and don't forget to leave a star on the repo ^^.
+if you liked the tutorial please give it a star 🌟
+
+also follow me.
+
+**Yahya EL Ganayni**
+
+- GitHub: [github](https://github.com/yahyaelganyni1)
+- Twitter: [@YElganayni](https://twitter.com/YElganayni)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yahya-el-ganayni-a456115b/)
+
